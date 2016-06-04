@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>اولین پست</title>
-  <meta name="description" content="یكی از قسمت های مهم هر صفحه وب تعیین سایز بخش های مختلف اون هست و خصوصا در طراحی ریسپانسیو انعطاف پذیر بودن اون خیلی اهمیت داره. تابع Calc یكی از توابع جدیدی...">
+  <meta name="description" content="سلام دنیا">
   <!-- Twitter cards metadatas -->
   
-  <meta name="twitter:card" content="یكی از قسمت های مهم هر صفحه وب تعیین سایز بخش های مختلف اون هست و خصوصا در طراحی ریسپانسیو انعطاف پذیر بودن اون خیلی اهمیت داره. تابع Calc یكی...">
+  <meta name="twitter:card" content="سلام دنیا
+">
   
   <meta name="twitter:site" content="@rezamahmoudii">
   <meta name="twitter:creator" content="@rezamahmoudii">
@@ -34,7 +35,8 @@
     <meta content="اولین پست" property="og:type">
   
   
-    <meta content="یكی از قسمت های مهم هر صفحه وب تعیین سایز بخش های مختلف اون هست و خصوصا در طراحی ریسپانسیو..." property="og:description">
+    <meta content="سلام دنیا
+" property="og:description">
   
   
     <meta content="http://doterfan.github.io/how-to-use-css-calc.html" property="og:url">
@@ -87,85 +89,7 @@
         <h1>اولین پست</h1>
     </div>
     <div class="content">
-        <p>یكی از قسمت های مهم هر صفحه وب تعیین سایز بخش های مختلف اون هست و خصوصا در طراحی ریسپانسیو انعطاف پذیر بودن اون خیلی اهمیت داره. تابع Calc یكی از توابع جدیدی هست كه به CSS3 اضافه شده و با استفاده از اون میتونید به راحتی سایز هر قسمت از طرح خودتون رو با متدهای دلخواه محاسباتی تعیین كنید!</p>
-
-<!--more-->
-
-<p>به خاطر استفاده زیادی كه از این تابع تا حالا كردم مفید دونستم كه در موردش توی وبلاگم مطلبی بنویسم تا شما هم باهاش آشنا بشید و بتونید ازش استفاده كنید.</p>
-
-<p>این تابع امكان استفاده از محاسبات در خاصیت ها CSS رو ممكن میكنه! به مثال زیر توجه كنید:</p>
-
-<div class="language-css highlighter-rouge">
-<pre class="highlight"><code><span class="nf">#test</span><span class="p">{</span>
-    <span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.4</span><span class="p">);</span>
-    <span class="nl">width</span><span class="p">:</span><span class="m">400px</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span><span class="m">0px</span> <span class="m">10px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nf">#test</span> <span class="nt">p</span><span class="p">{</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">350px</span> <span class="n">-</span> <span class="m">50px</span><span class="p">);</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="n">-moz-calc</span><span class="p">(</span><span class="m">350px</span> <span class="n">-</span> <span class="m">50px</span><span class="p">);</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="n">-webkit-calc</span><span class="p">(</span><span class="m">350px</span> <span class="n">-</span> <span class="m">50px</span><span class="p">);</span>
-    <span class="nl">background</span><span class="p">:</span><span class="m">#f0f0f0</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span><span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<div class="language-html highlighter-rouge">
-<pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"test"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-<p>به نمونه های زیر هم دقت كنید:</p>
-
-<div class="language-css highlighter-rouge">
-<pre class="highlight"><code><span class="c">/* basic calc */</span>
-<span class="nc">.simpleBlock</span> <span class="p">{</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">100%</span> <span class="n">-</span> <span class="m">100px</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c">/* calc in calc */</span>
-<span class="nc">.complexBlock</span> <span class="p">{</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">100%</span> <span class="n">-</span> <span class="m">50%</span> <span class="p">/</span> <span class="m">3</span><span class="p">);</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="n">calc</span><span class="p">(</span><span class="m">3%</span> <span class="n">-</span> <span class="m">2px</span><span class="p">);</span>
-    <span class="nl">margin-left</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">10%</span> <span class="err">+</span> <span class="m">10px</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<p>میبینید كه خیلی راحت با استفاده از Calc میتونید محاسبات رو توی خاصیت ها به كار ببرید.</p>
-
-<p>مثلا یكی از كاربردهای كه این تابع برای من داشت وسط قرار دادن فلش های كنترلی یك اسلایدشو بود كه من با استفاده از Calc در خاصیت <code class="highlighter-rouge">Top</code> اون رو <code class="highlighter-rouge">50%</code> قرار دادم و نصف ارتفاع تصویر فلش رو ازش كم كردم. به این صورت:</p>
-
-<div class="language-css highlighter-rouge">
-<pre class="highlight"><code><span class="nt">top</span><span class="nd">:calc</span><span class="o">(</span><span class="nt">50</span><span class="o">%</span> <span class="nt">-</span> <span class="nt">20px</span><span class="o">);</span>
-</code></pre>
-</div>
-
-<p>در واقع ارتفاع تصویر من <code class="highlighter-rouge">40px</code> هست و چون من میخوام تصویرم به صورت عمودی وسط صفحه قرار بگیره اندازه ارتفاع  <code class="highlighter-rouge">(height)</code> رو نصف میكنم تا <code class="highlighter-rouge">20px</code> از بالا و <code class="highlighter-rouge">20px</code> از پایین كم كنه. اگر در حالت عادی فقط <code class="highlighter-rouge">50%</code> رو بهش بدید دقیقا وسط قرار نمیگیره و <code class="highlighter-rouge">40px</code> پایین تر میاد كه بعد باید <code class="highlighter-rouge">20px</code> از بالا كم كنید:</p>
-
-<div class="language-css highlighter-rouge">
-<pre class="highlight"><code><span class="nt">margin-top</span><span class="nd">:-20px</span><span class="o">;</span>
-</code></pre>
-</div>
-
-<p>اینطوری هم دستورهای بیشتری نیاز داره و هم در حالت ریسپانسیو با مشكل مواجه میشه.</p>
-
-<p>میتونید از عملگرهای محسباتی زیر در این تابع استفاده كنید:</p>
-
-<p>جمع (+)</p>
-
-<p>تفریق (-)</p>
-
-<p>ضرب (*)</p>
-
-<p>تقسیم (/)</p>
-
-<p>این تابع در آینده تكمیل میشه و امكانات خیلی بهتری رو بهش اضافه میكن. اما در حال حاضر فقط از همین محاسبات پشتیبانی میكنه.</p>
-
-<p>به این هم توجه كنید كه برای پشتیبانی Calc در مرورگرهای مختلف حالت های <code class="highlighter-rouge">-moz</code> و <code class="highlighter-rouge">-webkit</code> رو فراموش نكنید.</p>
+        <p>سلام دنیا</p>
 
     </div>
     <div class="share">
@@ -179,8 +103,6 @@
     </div>
     <div class="navigations single clear">
         
-        
-            <a href="/intro.html" class="btn forward"><span class="icon-back"></span>intro</a>
         
     </div>
     
@@ -213,11 +135,12 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
     <div class="footer">
     <div class="inner clear">
-        <div class="footer-right-side">محمد رضا محمودی</div>
+        <div class="footer-right-side">عرفان سیدی</div>
         <div class="footer-middle"><span class="icon-heart"></span></div>
-        <div class="footer-left-side ltr">1391 - 1395</div>
+        <div class="footer-left-side ltr">1395</div>
     </div>
 </div>
+
   <script src="/js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script>
