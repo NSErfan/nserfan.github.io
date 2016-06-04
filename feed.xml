@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>عرفان سیدی</title>
+    <description></description>
+    <link>http://doterfan.github.io/</link>
+    <atom:link href="http://doterfan.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 04 Jun 2016 17:20:32 +0430</pubDate>
+    <lastBuildDate>Sat, 04 Jun 2016 17:20:32 +0430</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>intro</title>
+        <description>
+</description>
+        <pubDate>Sat, 04 Jun 2016 17:15:00 +0430</pubDate>
+        <link>http://doterfan.github.io/intro.html</link>
+        <guid isPermaLink="true">http://doterfan.github.io/intro.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>اولین پست</title>
+        <description>&lt;p&gt;یكی از قسمت های مهم هر صفحه وب تعیین سایز بخش های مختلف اون هست و خصوصا در طراحی ریسپانسیو انعطاف پذیر بودن اون خیلی اهمیت داره. تابع Calc یكی از توابع جدیدی هست كه به CSS3 اضافه شده و با استفاده از اون میتونید به راحتی سایز هر قسمت از طرح خودتون رو با متدهای دلخواه محاسباتی تعیین كنید!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;به خاطر استفاده زیادی كه از این تابع تا حالا كردم مفید دونستم كه در موردش توی وبلاگم مطلبی بنویسم تا شما هم باهاش آشنا بشید و بتونید ازش استفاده كنید.&lt;/p&gt;
+
+&lt;p&gt;این تابع امكان استفاده از محاسبات در خاصیت ها CSS رو ممكن میكنه! به مثال زیر توجه كنید:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;400px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;#test&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;350px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-moz-calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;350px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-webkit-calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;350px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#f0f0f0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;به نمونه های زیر هم دقت كنید:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* basic calc */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.simpleBlock&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* calc in calc */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.complexBlock&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10%&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;میبینید كه خیلی راحت با استفاده از Calc میتونید محاسبات رو توی خاصیت ها به كار ببرید.&lt;/p&gt;
+
+&lt;p&gt;مثلا یكی از كاربردهای كه این تابع برای من داشت وسط قرار دادن فلش های كنترلی یك اسلایدشو بود كه من با استفاده از Calc در خاصیت &lt;code class=&quot;highlighter-rouge&quot;&gt;Top&lt;/code&gt; اون رو &lt;code class=&quot;highlighter-rouge&quot;&gt;50%&lt;/code&gt; قرار دادم و نصف ارتفاع تصویر فلش رو ازش كم كردم. به این صورت:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:calc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;در واقع ارتفاع تصویر من &lt;code class=&quot;highlighter-rouge&quot;&gt;40px&lt;/code&gt; هست و چون من میخوام تصویرم به صورت عمودی وسط صفحه قرار بگیره اندازه ارتفاع  &lt;code class=&quot;highlighter-rouge&quot;&gt;(height)&lt;/code&gt; رو نصف میكنم تا &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt; از بالا و &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt; از پایین كم كنه. اگر در حالت عادی فقط &lt;code class=&quot;highlighter-rouge&quot;&gt;50%&lt;/code&gt; رو بهش بدید دقیقا وسط قرار نمیگیره و &lt;code class=&quot;highlighter-rouge&quot;&gt;40px&lt;/code&gt; پایین تر میاد كه بعد باید &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt; از بالا كم كنید:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:-20px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;اینطوری هم دستورهای بیشتری نیاز داره و هم در حالت ریسپانسیو با مشكل مواجه میشه.&lt;/p&gt;
+
+&lt;p&gt;میتونید از عملگرهای محسباتی زیر در این تابع استفاده كنید:&lt;/p&gt;
+
+&lt;p&gt;جمع (+)&lt;/p&gt;
+
+&lt;p&gt;تفریق (-)&lt;/p&gt;
+
+&lt;p&gt;ضرب (*)&lt;/p&gt;
+
+&lt;p&gt;تقسیم (/)&lt;/p&gt;
+
+&lt;p&gt;این تابع در آینده تكمیل میشه و امكانات خیلی بهتری رو بهش اضافه میكن. اما در حال حاضر فقط از همین محاسبات پشتیبانی میكنه.&lt;/p&gt;
+
+&lt;p&gt;به این هم توجه كنید كه برای پشتیبانی Calc در مرورگرهای مختلف حالت های &lt;code class=&quot;highlighter-rouge&quot;&gt;-moz&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;-webkit&lt;/code&gt; رو فراموش نكنید.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Mar 2013 00:00:00 +0330</pubDate>
+        <link>http://doterfan.github.io/how-to-use-css-calc.html</link>
+        <guid isPermaLink="true">http://doterfan.github.io/how-to-use-css-calc.html</guid>
+        
+        
+        <category>introduction</category>
+        
+      </item>
+    
+  </channel>
+</rss>
